@@ -73,7 +73,7 @@ class Thread extends React.Component {
                     </CardText>
                 </Card>
                 <div style={{
-                        "text-indent": "20px"
+                        "textIndent": "20px"
                     }}>
                     {comments}
                 </div>

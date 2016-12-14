@@ -16,10 +16,10 @@ class Footer extends React.Component {
             marginTop: "15px"
         };
         return (
-            <footer style={ footerStyle }>
-              <span>{ "\u00A9 2016 xerq, All rights reserved." }</span>
+            <footer style={footerStyle}>
+                <span>{"\u00A9 2016 xerq, All rights reserved."}</span>
             </footer>
-            );
+        );
     }
 }
 

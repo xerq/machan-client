@@ -35,40 +35,6 @@ class Application extends React.Component {
         return {muiTheme: getMuiTheme(lightTheme)};
     }
 
-    _onTodoAdded(todo) {
-        this.setState({
-            todoList: [
-                todo, ...this.state.todoList
-            ]
-        });
-    }
-
-    _onTodoDeleted(id) {
-        this.setState({
-            todoList: this.state.todoList.filter((todo) => todo.id !== id)
-        });
-    }
-
-    _onTodoChanged(newTodo) {
-        let newList = this.state.todoList.map((todo) => {
-            if (todo.id === newTodo.id) {
-                return newTodo;
-            }
-            return todo;
-        });
-        this.setState({todoList: newList});
-    }
-
-    _onChangeFilter(filter) {
-        this.setState({filter: filter});
-    }
-
-    _cleanCompleted() {
-        this.setState({
-            todoList: this.state.todoList.filter((todo) => !todo.completed)
-        });
-    }
-
     render() {
         return (
             <div>

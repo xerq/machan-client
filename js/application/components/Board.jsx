@@ -20,7 +20,7 @@ class Board extends React.Component {
     }
 
     getThreads() {
-        var self = this;
+        const self = this;
 
         API.getThreads().then((threads) => {
             self.setState({threads: threads});
